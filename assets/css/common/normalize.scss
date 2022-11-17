@@ -1,0 +1,58 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+*,
+*:before,
+*:after {
+    overflow-wrap: normal;
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+html {
+    font-family: 'Spoqa Han Sans Neo KR';
+    font-size: 62.5%;
+}
+
+body {
+    letter-spacing: -0.025em;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+    display: none;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+a {
+    outline-width: 0px;
+    text-decoration: none;
+}
