@@ -3,7 +3,7 @@
 </template>
 
 <script>
-definePageMeta ({
-    layout: "default",
+definePageMeta({
+    layout: 'default',
 });
 </script>
