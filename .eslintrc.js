@@ -16,6 +16,6 @@ module.exports = {
         'vue/multi-word-component-names': 'off',
         'no-undef': 'off',
         'no-unused-vars': 'warn',
-        'prettier/prettier': ['error', {}],
+        'prettier/prettier': ['error', { endOfLine: 'auto' }],
     },
 };
