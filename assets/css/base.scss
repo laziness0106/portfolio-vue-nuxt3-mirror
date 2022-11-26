@@ -2,6 +2,14 @@
 @import 'common/font.scss';
 @import 'common/normalize.scss';
 
+/* default style */
+html,
+body {
+    font-family: 'Spoqa Han Sans Neo', 'Apple SD Gothic Neo', 'Malgun Gothic',
+        '맑은 고딕', sans-serif;
+    color: var(--text-color);
+}
+
 /* font style title */
 h1 {
     @include font-h1();
