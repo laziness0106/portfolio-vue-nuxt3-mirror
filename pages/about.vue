@@ -1,7 +1,6 @@
 <template>
-    <h1>Hello, I'm an Markup Developer</h1>
+    <h1>ABOUT ME</h1>
     <p>blah blah blah blah blah blah blah blah blah blah blah</p>
-    <button>Contact me</button>
 </template>
 
 <script>
