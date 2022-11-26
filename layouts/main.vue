@@ -1,4 +1,5 @@
 <template>
+    <Header />
     <main class="layout-main">
         <slot />
     </main>
@@ -14,6 +15,6 @@ body,
 .layout-main {
     width: 100%;
     height: 100%;
-    padding: 4rem;
+    padding: 8rem 4rem 4rem 4rem;
 }
 </style>
