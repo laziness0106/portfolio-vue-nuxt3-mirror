@@ -1,2 +1,23 @@
 @import 'common/reset.scss';
+@import 'common/font.scss';
 @import 'common/normalize.scss';
+
+/* font style title */
+h1 {
+    @include font-h1();
+}
+h2 {
+    @include font-h2();
+}
+h3 {
+    @include font-h3();
+}
+
+/* font style content */
+p,
+span {
+    @include font-content();
+}
+.font-cap {
+    @include font-cap();
+}
