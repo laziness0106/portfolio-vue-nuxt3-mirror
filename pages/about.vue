@@ -1,6 +1,6 @@
 <template>
     <div class="page-container">
-        <h1>ABOUT ME</h1>
+        <h2>ABOUT ME</h2>
         <p>blah blah blah blah blah blah blah blah blah blah blah</p>
     </div>
 </template>

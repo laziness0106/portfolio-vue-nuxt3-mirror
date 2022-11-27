@@ -1,7 +1,7 @@
 <template>
     <div class="page-container">
         <section>
-            <h1 class="ally-hidden">WORKS</h1>
+            <h2 class="ally-hidden">WORKS</h2>
             <ul class="work-list-container">
                 <li class="work-item">work-item</li>
                 <li class="work-item">work-item</li>
@@ -20,13 +20,13 @@ definePageMeta({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .layout-main {
     .page-container {
         width: 100%;
         height: 100%;
         section {
-            width: 180%;
+            width: 100%;
             height: 80%;
             margin: 4rem 0;
             .work-list-container {

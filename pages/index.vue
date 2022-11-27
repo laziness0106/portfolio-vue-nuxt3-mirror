@@ -1,7 +1,7 @@
 <template>
     <div class="page-container">
         <section>
-            <h1>Hello, I'm an UI/UX Engineer</h1>
+            <h2>Hello, I'm an UI/UX Engineer</h2>
             <p>
                 bra bra bra bra bra bra bra bra bra bra bra bra bra bra bra bra
                 bra bra
@@ -16,7 +16,7 @@
             </p>
             <CButton text="Contact me" type="primary" size="md" />
         </section>
-        <section class="bg-section"></section>
+        <div class="bg-container"></div>
     </div>
 </template>
 
@@ -26,21 +26,20 @@ definePageMeta({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .layout-main {
     .page-container {
         width: 100%;
         height: 100%;
         display: flex;
+        align-items: center;
         column-gap: 4rem;
         section {
-            width: 180%;
-            height: 80%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             row-gap: 2.4rem;
-            margin: 4rem 0;
             p {
                 + button {
                     margin-top: 4.4rem;
@@ -50,7 +49,9 @@ definePageMeta({
                 width: fit-content;
             }
         }
-        .bg-section {
+        .bg-container {
+            width: 100%;
+            height: 80%;
             border-radius: 0.8rem;
             background-image: url('@/assets/images/background/bg-me.jpg');
             background-size: cover;
