@@ -13,8 +13,8 @@
             적을 내용이 많았으면 좋겠다. 적을 내용이 많았으면 좋겠다. 적을
             내용이 많았으면 좋겠다. <br />
         </p>
+        <button>Contact me</button>
     </section>
-    <button>Contact me</button>
 </template>
 
 <script>
