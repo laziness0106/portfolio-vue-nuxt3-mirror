@@ -1,8 +1,8 @@
 <template>
-    <section>
+    <div class="page-container">
         <h1>RESUME</h1>
         <p>blah blah blah blah blah blah blah blah blah blah blah</p>
-    </section>
+    </div>
 </template>
 
 <script>
