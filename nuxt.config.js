@@ -2,6 +2,9 @@ import eslintPlugin from 'vite-plugin-eslint';
 
 export default defineNuxtConfig({
     css: ['~/assets/css/base.scss'],
+    app: {
+        pageTransition: { name: 'page', mode: 'out-in' },
+    },
     buildModules: ['nuxt-vite', '@nuxtjs/style-resources'],
     vite: {
         css: {
