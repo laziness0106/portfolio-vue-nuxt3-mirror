@@ -7,12 +7,12 @@
 }
 @mixin font-h2() {
     font-size: 2.8rem;
-    line-height: 3.4rem;
+    line-height: 3.2rem;
     font-weight: bold;
     color: var(--text-color);
 }
 @mixin font-h3() {
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 2.8rem;
     font-weight: bold;
     color: var(--text-color);
@@ -21,7 +21,7 @@
 /* font style content */
 @mixin font-content() {
     font-size: 1.6rem;
-    line-height: 2.2rem;
+    line-height: 2rem;
     font-weight: normal;
     color: var(--text-color);
 }

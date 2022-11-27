@@ -14,7 +14,13 @@ nav {
     > ul {
         display: flex;
         justify-content: flex-end;
-        gap: 2rem;
+        gap: 8rem;
+        li {
+            a {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
     }
 }
 </style>
