@@ -7,22 +7,31 @@
 <script>
 export default {
     name: 'CButton',
-    props: [
+    props: {
         /* button의 내용 */
-        'text',
+        text: {
+            type: String,
+            default: 'button',
+        },
         /* button의 타입
          * 'primary'
          * 'secondary'
          * 'ghost'
          */
-        'type',
+        type: {
+            type: String,
+            default: 'primary',
+        },
         /* button의 크기
          * 'sm'
          * 'md'
          * 'lg'
          */
-        'size',
-    ],
+        size: {
+            type: String,
+            default: 'md',
+        },
+    },
     data() {
         return {
             typeClass: this.type,
