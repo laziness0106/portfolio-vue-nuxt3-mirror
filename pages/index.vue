@@ -14,8 +14,9 @@
                 적을 내용이 많았으면 좋겠다. 적을 내용이 많았으면 좋겠다. 적을
                 내용이 많았으면 좋겠다. <br />
             </p>
+            <CButton text="Contact me" type="primary" size="md" />
         </section>
-        <CButton text="Contact me" type="primary" size="md" />
+        <section class="bg-section"></section>
     </div>
 </template>
 
@@ -30,18 +31,31 @@ definePageMeta({
     .page-container {
         width: 100%;
         height: 100%;
+        display: flex;
+        column-gap: 4rem;
         section {
-            width: 100%;
-            height: 100%;
+            width: 180%;
+            height: 80%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            row-gap: 2.8rem;
-            h1 {
-                + p {
-                    margin-top: 2rem;
+            row-gap: 2.4rem;
+            margin: 4rem 0;
+            p {
+                + button {
+                    margin-top: 4.4rem;
                 }
             }
+            button {
+                width: fit-content;
+            }
+        }
+        .bg-section {
+            border-radius: 0.8rem;
+            background-image: url('@/assets/images/background/bg-me.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
 }
