@@ -3,7 +3,9 @@
         <section>
             <h2 class="ally-hidden">WORKS</h2>
             <ul class="work-list-container">
-                <li class="work-item">work-item</li>
+                <li class="work-item">
+                    <NuxtLink to="/design-system">design system</NuxtLink>
+                </li>
                 <li class="work-item">work-item</li>
                 <li class="work-item">work-item</li>
                 <li class="work-item">work-item</li>
