@@ -1,15 +1,42 @@
 <template>
     <div class="page-container">
-        <section>
-            <h2>design system</h2>
-            <p>blah blah blah blah blah blah blah blah blah blah blah</p>
-        </section>
+        <article>
+            <div class="work-contents">
+                <h2>STOVE Design System</h2>
+                <p>Smilegate STOVE의 사내 프로젝트용 디자인시스템</p>
+                <p>
+                    디자인시스템을 만들었고 힘들었고 좋았고 경험이었고 어쩄든
+                    그랬고 저랬고 저쨋고 디자인시스템을 만들었고 힘들었고 좋았고
+                    경험이었고 어쩄든 그랬고 저랬고 저쨋고 디자인시스템을
+                    만들었고 힘들었고 좋았고 경험이었고 어쩄든 그랬고 저랬고
+                    저쨋고
+                </p>
+            </div>
+            <div class="work-contents">
+                <h3>USED</h3>
+                <ul>
+                    <li><CIcon type="ic-lang-html5" /></li>
+                    <li><CIcon type="ic-lang-css3" /></li>
+                    <li><CIcon type="ic-lang-vue" /></li>
+                    <li><CIcon type="ic-lang-tailwind" /></li>
+                    <li><CIcon type="ic-lang-typescript" /></li>
+                    <li><CIcon type="ic-lang-storybook" /></li>
+                </ul>
+            </div>
+            <div class="work-contents">
+                <h3>PLATFORM</h3>
+                <ul>
+                    <li>Web</li>
+                    <li>Mobile</li>
+                </ul>
+            </div>
+        </article>
     </div>
 </template>
 
 <script>
 definePageMeta({
-    layout: 'works',
+    layout: 'work',
     layoutTransition: { name: 'layout', mode: 'out-in' },
 });
 </script>
@@ -17,24 +44,7 @@ definePageMeta({
 <style lang="scss" scoped>
 .layout-works {
     .page-container {
-        width: 100%;
-        height: 100%;
         background-image: url('@/assets/images/background/bg-me.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        section {
-            width: 35%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            padding: 4rem;
-            margin-left: auto;
-            overflow-y: auto;
-            background: white;
-            box-shadow: -0.1rem 0 2rem rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
     }
 }
 </style>
