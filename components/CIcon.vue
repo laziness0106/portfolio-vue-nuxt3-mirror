@@ -10,6 +10,7 @@ export default {
     props: {
         /* icon의 타입
          * 'ic-close'
+         * 'ic-check'
          * 'ic-lang-html5'
          * 'ic-lang-css3'
          * 'ic-lang-vue'
@@ -59,6 +60,9 @@ i {
     }
     &.ic-close {
         background-image: url(@/assets/images/icons/ic-close.svg);
+    }
+    &.ic-check {
+        background-image: url(@/assets/images/icons/ic-check.svg);
     }
     &.ic-lang-html5 {
         background-image: url(@/assets/images/icons/ic-lang-html5.svg);
