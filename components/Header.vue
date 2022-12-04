@@ -15,6 +15,6 @@ header {
     justify-content: space-around;
     width: 100%;
     padding: 2rem 4rem;
-    bacgkround: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.4);
 }
 </style>
