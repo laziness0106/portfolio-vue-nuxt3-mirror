@@ -1,22 +1,37 @@
 <template>
     <div class="page-container">
         <section>
-            <h2>Hello, I'm an UI/UX Engineer</h2>
-            <p>
-                bra bra bra bra bra bra bra bra bra bra bra bra bra bra bra bra
-                bra bra
-                <br />
-                bra bra bra bra bra bra bra bra bra bra bra bra bra bra bra bra
-                bra bra
-                <br />
-                적을 내용이 많았으면 좋겠다. 적을 내용이 많았으면 좋겠다. 적을
-                내용이 많았으면 좋겠다. <br />
-                적을 내용이 많았으면 좋겠다. 적을 내용이 많았으면 좋겠다. 적을
-                내용이 많았으면 좋겠다. <br />
-            </p>
-            <CButton text="Contact me" type="primary" size="md" />
+            <h2>홍순현</h2>
+            <ul>
+                <li>
+                    <CLabel type="primary" text="html" size="md" />
+                </li>
+                <li>
+                    <CLabel type="secondary" text="sass" size="md" />
+                </li>
+                <li>
+                    <CLabel type="tertiary" text="JavaScript" size="md" />
+                </li>
+                <li>
+                    <CLabel type="pink" text="Vue" size="md" />
+                </li>
+                <li>
+                    <CLabel type="pink-light" text="Nuxt" size="md" />
+                </li>
+                <li>
+                    <CLabel type="yellow" text="Typescript" size="md" />
+                </li>
+                <li>
+                    <CLabel type="blue" text="Github" size="md" />
+                </li>
+                <li>
+                    <CLabel type="blue-light" text="Tailwind" size="md" />
+                </li>
+                <li>
+                    <CLabel type="blue-dark" text="bootstrap" size="md" />
+                </li>
+            </ul>
         </section>
-        <div class="bg-container"></div>
     </div>
 </template>
 
@@ -36,27 +51,17 @@ definePageMeta({
         column-gap: 4rem;
         section {
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            row-gap: 2.4rem;
-            p {
-                + button {
-                    margin-top: 4.4rem;
-                }
+            text-align: center;
+            > h2 {
+                font-size: 20rem;
+                line-height: 24rem;
             }
-            button {
-                width: fit-content;
+            > ul {
+                display: flex;
+                justify-content: center;
+                margin-top: 4rem;
+                column-gap: 1.2rem;
             }
-        }
-        .bg-container {
-            width: 100%;
-            height: 80%;
-            border-radius: 0.8rem;
-            background-image: url('@/assets/images/background/bg-me.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
         }
     }
 }
