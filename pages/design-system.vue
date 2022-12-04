@@ -44,7 +44,7 @@ definePageMeta({
 <style lang="scss" scoped>
 .layout-works {
     .page-container {
-        background-image: url('@/assets/images/background/bg-me.jpg');
+        background-image: url('@/assets/images/me.jpg');
     }
 }
 </style>

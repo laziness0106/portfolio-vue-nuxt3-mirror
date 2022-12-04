@@ -9,7 +9,7 @@
                 마크업 개발자입니다.
             </h3>
             <img
-                src="@/assets/images/background/bg-me.jpg"
+                src="@/assets/images/me.jpg"
                 alt="shhong"
                 class="content-img-me"
                 data-aos="fade-up"
@@ -30,7 +30,7 @@
                 성큼성큼 발을 딛고 있는 제 자신을 발견할 수 있습니다.
             </p>
             <img
-                src="@/assets/images/background/bg-me2.jpg"
+                src="@/assets/images/me2.jpg"
                 alt="shhong"
                 class="content-img-me2"
                 data-aos="fade-up"
