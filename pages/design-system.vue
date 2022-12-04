@@ -28,6 +28,7 @@
                 <ul>
                     <li>Web</li>
                     <li>Mobile</li>
+                    <li>Client</li>
                 </ul>
             </div>
         </article>
@@ -44,7 +45,11 @@ definePageMeta({
 <style lang="scss" scoped>
 .layout-works {
     .page-container {
-        background-image: url('@/assets/images/me.jpg');
+        background: var(--secondary-color);
+        background-image: url('@/assets/images/work-item01.png');
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: 0% 40%;
     }
 }
 </style>

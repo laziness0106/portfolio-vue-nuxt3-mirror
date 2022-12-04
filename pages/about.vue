@@ -1,8 +1,8 @@
 <template>
     <div class="page-container">
-        <h2 data-aos="fade-up" data-aos-delay="300">ABOUT ME</h2>
+        <h2 data-aos="fade-up" data-aos-delay="200">ABOUT ME</h2>
         <section class="welcome-section">
-            <h3 data-aos="fade-up" data-aos-delay="400">
+            <h3 data-aos="fade-up" data-aos-delay="300">
                 안녕하세요!<br />
                 저는 시멘틱한 구조와<br />
                 사용감있는 UX를 추구하는<br />
@@ -13,16 +13,16 @@
                 alt="shhong"
                 class="content-img-me"
                 data-aos="fade-up"
-                data-aos-delay="700"
+                data-aos-delay="400"
             />
-            <p data-aos="fade-up" data-aos-delay="500">
+            <p data-aos="fade-up" data-aos-delay="300">
                 견고하고 논리적인 구조의 페이지가<br />
                 깔끔하게 정리된 CSS를 통해 그려지고<br />
                 서비스에 맞춰 정형화된 UI 컴포넌트들이<br />
                 유저친화적인 동작들로 사용감을 높여주는<br />
                 그런 착실한 사이트를 만드는게 저의 일입니다.
             </p>
-            <p data-aos="fade-up" data-aos-delay="500">
+            <p data-aos="fade-up" data-aos-delay="200">
                 성능과 유지보수의 최적화를 위해 고민하고<br />
                 사용자 입장에서 생각하는걸 좋아합니다.<br />
                 그러다보면 어느새 마크업이라는 영역을 벗어나<br />
@@ -34,9 +34,9 @@
                 alt="shhong"
                 class="content-img-me2"
                 data-aos="fade-up"
-                data-aos-delay="700"
+                data-aos-delay="400"
             />
-            <strong data-aos="fade-up" data-aos-delay="600">
+            <strong data-aos="fade-up" data-aos-delay="500">
                 좋아하는 일을 더 잘하는 것<br />
                 그게 바로 제가 꿈꾸는 저의 '목표'입니다.
             </strong>
@@ -44,13 +44,13 @@
         <section
             class="list-section skill-section"
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="200"
         >
-            <h3 data-aos="fade-up" data-aos-delay="300">
+            <h3 data-aos="fade-up" data-aos-delay="200">
                 제가 좋아하는<br />
                 저의 직무들을 소개합니다.
             </h3>
-            <ul data-aos="fade-up" data-aos-delay="800">
+            <ul data-aos="fade-up" data-aos-delay="600">
                 <li>
                     <CIcon type="ic-check" size="sm" />
                     <strong>Markup</strong>
@@ -90,12 +90,12 @@
         <section
             class="list-section pr-section"
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="200"
         >
-            <h3 data-aos="fade-up" data-aos-delay="300">
+            <h3 data-aos="fade-up" data-aos-delay="200">
                 이럴 때 제가 필요할거에요
             </h3>
-            <ul data-aos="fade-up" data-aos-delay="800">
+            <ul data-aos="fade-up" data-aos-delay="600">
                 <li>
                     <CIcon type="ic-check" size="sm" />
                     <span
@@ -127,16 +127,16 @@
             </ul>
         </section>
         <section class="contact-section contact-section">
-            <h3 data-aos="fade-up" data-aos-delay="300">연락주세요</h3>
+            <h3 data-aos="fade-up" data-aos-delay="200">연락주세요</h3>
             <p>
-                <strong data-aos="fade-up" data-aos-delay="500">
+                <strong data-aos="fade-up" data-aos-delay="400">
                     <a
                         href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=valentine15year@gmail.com"
                         target="_blank"
                         >valentine15year@gmail.com</a
                     >
                 </strong>
-                <strong data-aos="fade-up" data-aos-delay="600">
+                <strong data-aos="fade-up" data-aos-delay="500">
                     <a href="sms:010-6393-5118">010 - 6393 - 5118</a>
                 </strong>
             </p>

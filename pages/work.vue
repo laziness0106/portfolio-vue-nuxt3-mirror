@@ -10,13 +10,13 @@
                     <NuxtLink to="/jestina">J.ESTINA</NuxtLink>
                 </li>
                 <li class="work-item">
-                    <a href="#" class="comming">준비중입니다.</a>
+                    <a href="#" class="comming">함께 해봐요</a>
                 </li>
                 <li class="work-item">
-                    <a href="#" class="comming">준비중입니다.</a>
+                    <a href="#" class="comming">함께 해봐요</a>
                 </li>
                 <li class="work-item">
-                    <a href="#" class="comming">준비중입니다.</a>
+                    <a href="#" class="comming">함께 해봐요</a>
                 </li>
                 <li class="work-item">
                     <NuxtLink to="/domino">Domino's Pizza</NuxtLink>
