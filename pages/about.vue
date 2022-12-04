@@ -154,7 +154,7 @@ definePageMeta({
 .layout-main {
     .page-container {
         padding: 0;
-        padding-top: 6rem;
+        padding-top: 8.4rem;
         h2 {
             padding: 4rem;
             text-align: right;
