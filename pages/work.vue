@@ -1,7 +1,7 @@
 <template>
     <div class="page-container">
-        <section>
-            <h2>WORK</h2>
+        <h2 data-aos="fade-up" data-aos-delay="200">WORK</h2>
+        <section data-aos="fade-up" data-aos-delay="400">
             <ul class="work-list-container">
                 <li class="work-item">
                     <NuxtLink to="/design-system">Design System</NuxtLink>
@@ -35,15 +35,15 @@ definePageMeta({
 <style lang="scss" scoped>
 .layout-main {
     .page-container {
-        width: 100%;
-        height: 100%;
+        padding: 8.4rem 0;
+        h2 {
+            padding: 4rem;
+            text-align: left;
+        }
         section {
             width: 100%;
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            row-gap: 4rem;
+            padding: 4rem;
             .work-list-container {
                 width: 100%;
                 display: grid;
