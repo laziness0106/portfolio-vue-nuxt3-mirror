@@ -15,6 +15,13 @@
                 data-aos="fade-up"
                 data-aos-delay="400"
             />
+            <img
+                src="@/assets/images/me2.jpg"
+                alt="shhong"
+                class="content-img-me2"
+                data-aos="fade-up"
+                data-aos-delay="500"
+            />
             <p data-aos="fade-up" data-aos-delay="300">
                 견고하고 논리적인 구조의 페이지가<br />
                 깔끔하게 정리된 CSS를 통해 그려지고<br />
@@ -29,13 +36,6 @@
                 프론트엔드 개발, 웹 기획 등 다른 분야까지<br />
                 성큼성큼 발을 딛고 있는 제 자신을 발견할 수 있습니다.
             </p>
-            <img
-                src="@/assets/images/me2.jpg"
-                alt="shhong"
-                class="content-img-me2"
-                data-aos="fade-up"
-                data-aos-delay="400"
-            />
             <strong data-aos="fade-up" data-aos-delay="500">
                 좋아하는 일을 더 잘하는 것<br />
                 그게 바로 제가 꿈꾸는 저의 '목표'입니다.
@@ -178,22 +178,28 @@ definePageMeta({
             .content-img-me {
                 width: 38%;
                 border-radius: 0.8rem;
-                position: absolute;
-                margin-top: 3%;
-                right: 4rem;
             }
             .content-img-me2 {
                 width: 32%;
                 border-radius: 0.8rem;
-                position: absolute;
-                margin-top: 42%;
-                left: 4rem;
             }
             &.welcome-section {
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 8rem 0;
+                > * {
+                    width: 49%;
+                }
+                img {
+                    width: 40%;
+                }
                 strong {
                     @include font-content();
+                    width: 100%;
                     text-align: center;
-                    margin-top: 24rem;
+                    margin-top: 12rem;
                 }
             }
             &.list-section {
