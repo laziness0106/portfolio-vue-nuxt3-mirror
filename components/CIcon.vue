@@ -21,6 +21,7 @@ export default {
          * 'ic-lang-jsp'
          * 'ic-lang-jquery'
          * 'ic-lang-javascript'
+         * 'ic-lang-bootstrap'
          */
         type: {
             type: String,
@@ -102,6 +103,9 @@ i {
     }
     &.ic-lang-javascript {
         background-image: url(@/assets/images/icons/ic-lang-javascript.svg);
+    }
+    &.ic-lang-bootstrap {
+        background-image: url(@/assets/images/icons/ic-lang-bootstrap.svg);
     }
 }
 </style>
