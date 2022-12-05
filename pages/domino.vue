@@ -3,13 +3,15 @@
         <article>
             <div class="work-contents">
                 <h2>Domino's Pizza</h2>
-                <p>J.ESTINA의 사내 프로젝트용 디자인시스템</p>
                 <p>
-                    디자인시스템을 만들었고 힘들었고 좋았고 경험이었고 어쩄든
-                    그랬고 저랬고 저쨋고 디자인시스템을 만들었고 힘들었고 좋았고
-                    경험이었고 어쩄든 그랬고 저랬고 저쨋고 디자인시스템을
-                    만들었고 힘들었고 좋았고 경험이었고 어쩄든 그랬고 저랬고
-                    저쨋고
+                    도미노피자 웹사이트의 리뉴얼 및 신규 서비스 런칭, 프로모션
+                    이벤트페이지 등을 담당했다. 터치 한번으로 주문이 완료되는
+                    퀵오더의 UI 작업들은 터치와 동시에 결제가 이뤄지기 때문에
+                    사용자 입장에서 꽤나 고민해야했고, 그 외에 드론배달이나
+                    드라이브쓰루 등의 서비스 역시 사용자의 동선이 구매에
+                    직간접적으로 영향을 주는 만큼 많은 시도를 해야했다. 이런
+                    UI/UX에 대한 고민과 시도들은 회사뿐아니라 나 스스로에게
+                    있어서도 기술면으로나 경험면으로나 정말 큰 도움이 되었다.
                 </p>
             </div>
             <div class="work-contents">
@@ -18,9 +20,8 @@
                     <li><CIcon type="ic-lang-html5" /></li>
                     <li><CIcon type="ic-lang-css3" /></li>
                     <li><CIcon type="ic-lang-vue" /></li>
-                    <li><CIcon type="ic-lang-tailwind" /></li>
-                    <li><CIcon type="ic-lang-typescript" /></li>
-                    <li><CIcon type="ic-lang-storybook" /></li>
+                    <li><CIcon type="ic-lang-jsp" /></li>
+                    <li><CIcon type="ic-lang-javascript" /></li>
                 </ul>
             </div>
             <div class="work-contents">
@@ -28,7 +29,8 @@
                 <ul>
                     <li>Web</li>
                     <li>Mobile</li>
-                    <li>Client</li>
+                    <li>Android</li>
+                    <li>IOS</li>
                 </ul>
             </div>
         </article>

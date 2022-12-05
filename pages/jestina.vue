@@ -3,13 +3,14 @@
         <article>
             <div class="work-contents">
                 <h2>J.ESTINA</h2>
-                <p>J.ESTINA의 사내 프로젝트용 디자인시스템</p>
                 <p>
-                    디자인시스템을 만들었고 힘들었고 좋았고 경험이었고 어쩄든
-                    그랬고 저랬고 저쨋고 디자인시스템을 만들었고 힘들었고 좋았고
-                    경험이었고 어쩄든 그랬고 저랬고 저쨋고 디자인시스템을
-                    만들었고 힘들었고 좋았고 경험이었고 어쩄든 그랬고 저랬고
-                    저쨋고
+                    제이에스티나 웹사이트의 리뉴얼 및 신규 서비스 런칭, 프로모션
+                    이벤트페이지 등을 담당했다. PL로 참여해 프로젝트의 처음부터
+                    끝까지 도맡아 작업한 메인페이지 리뉴얼은 내 경력 중 가장
+                    재밌고 보람있는 경험이 되었다. 프로모션 이벤트페이지가
+                    네이버 실시간 검색어에 등재되었던 일 또한 기억에 남는다. 그
+                    외 핸드백DIY나 O2O 등의 신규 서비스에 기획 및 마크업으로
+                    참여했다
                 </p>
             </div>
             <div class="work-contents">
@@ -17,10 +18,10 @@
                 <ul>
                     <li><CIcon type="ic-lang-html5" /></li>
                     <li><CIcon type="ic-lang-css3" /></li>
-                    <li><CIcon type="ic-lang-vue" /></li>
-                    <li><CIcon type="ic-lang-tailwind" /></li>
-                    <li><CIcon type="ic-lang-typescript" /></li>
-                    <li><CIcon type="ic-lang-storybook" /></li>
+
+                    <li><CIcon type="ic-lang-jsp" /></li>
+                    <li><CIcon type="ic-lang-jquery" /></li>
+                    <li><CIcon type="ic-lang-javascript" /></li>
                 </ul>
             </div>
             <div class="work-contents">
@@ -28,7 +29,8 @@
                 <ul>
                     <li>Web</li>
                     <li>Mobile</li>
-                    <li>Client</li>
+                    <li>Android</li>
+                    <li>IOS</li>
                 </ul>
             </div>
         </article>
