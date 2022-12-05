@@ -11,6 +11,7 @@ export default {
         /* icon의 타입
          * 'ic-close'
          * 'ic-check'
+         * 'ic-dot'
          * 'ic-lang-html5'
          * 'ic-lang-css3'
          * 'ic-lang-vue'
@@ -49,6 +50,11 @@ i {
     display: block;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
+    &.xs {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
     &.sm {
         width: 2rem;
         height: 2rem;
@@ -66,6 +72,9 @@ i {
     }
     &.ic-check {
         background-image: url(@/assets/images/icons/ic-check.svg);
+    }
+    &.ic-dot {
+        background-image: url(@/assets/images/icons/ic-dot.svg);
     }
     &.ic-lang-html5 {
         background-image: url(@/assets/images/icons/ic-lang-html5.svg);
