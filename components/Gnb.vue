@@ -3,7 +3,7 @@
         <ul>
             <li><NuxtLink to="/work">WORK</NuxtLink></li>
             <li><NuxtLink to="/about">ABOUT</NuxtLink></li>
-            <li><NuxtLink to="/resume">RESUME</NuxtLink></li>
+            <li><NuxtLink to="/career">CAREER</NuxtLink></li>
         </ul>
     </nav>
 </template>
