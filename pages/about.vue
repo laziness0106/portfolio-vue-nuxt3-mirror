@@ -153,11 +153,10 @@ definePageMeta({
 <style lang="scss" scoped>
 .layout-main {
     .page-container {
-        padding: 0;
-        padding-top: 8.4rem;
+        padding: 8.4rem 0;
         h2 {
             padding: 4rem;
-            text-align: right;
+            text-align: left;
         }
         section {
             padding: 12rem 4rem;
