@@ -18,10 +18,10 @@
                 <ul>
                     <li><CIcon type="ic-lang-html5" /></li>
                     <li><CIcon type="ic-lang-css3" /></li>
-
                     <li><CIcon type="ic-lang-jsp" /></li>
                     <li><CIcon type="ic-lang-jquery" /></li>
                     <li><CIcon type="ic-lang-javascript" /></li>
+                    <li><CIcon type="ic-lang-bootstrap" /></li>
                 </ul>
             </div>
             <div class="work-contents">
