@@ -17,6 +17,9 @@ export default {
          * 'ic-lang-tailwind'
          * 'ic-lang-typescript'
          * 'ic-lang-storybook'
+         * 'ic-lang-jsp'
+         * 'ic-lang-jquery'
+         * 'ic-lang-javascript'
          */
         type: {
             type: String,
@@ -81,6 +84,15 @@ i {
     }
     &.ic-lang-storybook {
         background-image: url(@/assets/images/icons/ic-lang-storybook.svg);
+    }
+    &.ic-lang-jsp {
+        background-image: url(@/assets/images/icons/ic-lang-jsp.svg);
+    }
+    &.ic-lang-jquery {
+        background-image: url(@/assets/images/icons/ic-lang-jquery.svg);
+    }
+    &.ic-lang-javascript {
+        background-image: url(@/assets/images/icons/ic-lang-javascript.svg);
     }
 }
 </style>
