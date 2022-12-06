@@ -7,9 +7,12 @@ cache:
     paths:
         - node_modules/
 
-pages:
+build-job:
+    stage: build
+    script:
+        - nuxt build
+
+deploy-prod:
+    stage: deploy
     script:
         - npm run generate
-    artifacts:
-        paths:
-            - public
