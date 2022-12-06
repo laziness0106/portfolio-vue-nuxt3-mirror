@@ -1,6 +1,10 @@
 import eslintPlugin from 'vite-plugin-eslint';
 
 export default defineNuxtConfig({
+    target: 'static',
+    router: {
+        base: '/portfolio-vue-nuxt3/',
+    },
     css: ['~/assets/css/base.scss'],
     app: {
         pageTransition: { name: 'page', mode: 'out-in' },
