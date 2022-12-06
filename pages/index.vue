@@ -55,12 +55,27 @@ definePageMeta({
             > h2 {
                 font-size: 20rem;
                 line-height: 24rem;
+                @include tablet {
+                    font-size: 12rem;
+                    line-height: 16rem;
+                }
+                @include mobile {
+                    font-size: 6rem;
+                    line-height: 8rem;
+                }
             }
             > ul {
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
                 margin-top: 4rem;
-                column-gap: 1.2rem;
+                gap: 1.2rem;
+                @include tablet {
+                    margin-top: 2.8rem;
+                }
+                @include mobile {
+                    margin-top: 1.2rem;
+                }
             }
         }
     }

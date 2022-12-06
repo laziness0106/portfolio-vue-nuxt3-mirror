@@ -46,11 +46,8 @@ definePageMeta({
 <style lang="scss" scoped>
 .layout-works {
     .page-container {
-        background: var(--secondary-color);
+        background-color: var(--secondary-color);
         background-image: url('@/assets/images/work-item01.png');
-        background-repeat: no-repeat;
-        background-size: 80%;
-        background-position: 0% 40%;
     }
 }
 </style>

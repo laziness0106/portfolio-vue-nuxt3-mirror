@@ -1,6 +1,6 @@
 <template>
     <div class="page-container">
-        <h2 data-aos="fade-up" data-aos-delay="200">ABOUT ME</h2>
+        <h2 data-aos="fade-up" data-aos-delay="200">ABOUT</h2>
         <section class="welcome-section">
             <h3 data-aos="fade-up" data-aos-delay="300">
                 안녕하세요!<br />
@@ -154,9 +154,21 @@ definePageMeta({
 .layout-main {
     .page-container {
         padding: 8.4rem 0;
+        @include tablet {
+            padding-bottom: 12rem;
+        }
+        @include mobile {
+            padding-bottom: 12rem;
+        }
         h2 {
             padding: 4rem;
             text-align: left;
+            @include tablet {
+                padding: 2rem;
+            }
+            @include mobile {
+                padding: 1.2rem;
+            }
         }
         section {
             padding: 12rem 4rem;
@@ -165,6 +177,12 @@ definePageMeta({
             flex-direction: column;
             gap: 12rem;
             background: var(--on-background-color);
+            @include tablet {
+                padding: 6rem 2rem;
+            }
+            @include mobile {
+                padding: 6rem 1.2rem;
+            }
             &:nth-child(2n-1) {
                 background: var(--on-background-color-2);
             }
@@ -174,6 +192,9 @@ definePageMeta({
             }
             > :nth-child(2n) {
                 text-align: right;
+                @include mobile {
+                    text-align: left;
+                }
             }
             .content-img-me {
                 width: 38%;
@@ -189,30 +210,60 @@ definePageMeta({
                 justify-content: space-between;
                 align-items: center;
                 gap: 8rem 0;
+                @include tablet {
+                    gap: 2rem 0;
+                }
+                @include mobile {
+                    gap: 2rem 0;
+                    padding: 0 1.2rem 8rem;
+                }
                 > * {
                     width: 49%;
+                    @include mobile {
+                        width: 100%;
+                    }
                 }
                 img {
                     width: 40%;
+                    @include mobile {
+                        width: 100%;
+                    }
                 }
                 strong {
                     @include font-content();
                     width: 100%;
                     text-align: center;
                     margin-top: 12rem;
+                    @include tablet {
+                        margin-top: 4rem;
+                        width: 100%;
+                    }
+                    @include mobile {
+                        margin-top: 0;
+                        text-align: left;
+                    }
                 }
             }
             &.list-section {
                 flex-direction: row;
                 justify-content: space-between;
                 gap: 0;
+                @include mobile {
+                    display: block;
+                }
                 > :first-child {
                     text-align: right;
+                    @include mobile {
+                        text-align: left;
+                    }
                     + ul {
                         position: relative;
                         display: flex;
                         flex-direction: column;
                         row-gap: 0.8rem;
+                        @include mobile {
+                            margin-top: 2rem;
+                        }
                         &:before {
                             content: '';
                             width: 0.1rem;
@@ -221,6 +272,9 @@ definePageMeta({
                             left: -2%;
                             background: var(--text-color);
                             opacity: 0.3;
+                            @include mobile {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -230,6 +284,10 @@ definePageMeta({
                 > * {
                     width: 49%;
                     padding: 0 8rem;
+                    @include mobile {
+                        width: 100%;
+                        padding: 0;
+                    }
                 }
                 ul {
                     li {
@@ -269,15 +327,25 @@ definePageMeta({
                 gap: 0.8rem;
                 > * {
                     text-align: center;
+                    @include mobile {
+                        text-align: left;
+                    }
                 }
                 p {
                     display: flex;
                     flex-direction: column;
                     row-gap: 1.6rem;
                     margin-top: 4.4rem;
+                    @include mobile {
+                        margin-top: 2rem;
+                    }
                     strong {
                         font-size: 4.8rem;
                         line-height: 6.4rem;
+                        @include mobile {
+                            font-size: 3.2rem;
+                            line-height: 3.6rem;
+                        }
                         &:nth-child(1) {
                             color: var(--primary-color);
                         }

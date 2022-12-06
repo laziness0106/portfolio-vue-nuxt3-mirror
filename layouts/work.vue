@@ -27,8 +27,14 @@ body,
         width: 100%;
         height: 100%;
         background-size: cover;
-        background-position: center;
         background-repeat: no-repeat;
+        background-position: 0% 40%;
+        @include mobile {
+            display: flex;
+            align-items: flex-end;
+            background-position: 10% -20%;
+            background-size: 120%;
+        }
         article {
             width: 40rem;
             height: 100%;
@@ -42,17 +48,42 @@ body,
             background: white;
             box-shadow: -0.1rem 0 2rem rgba(0, 0, 0, 0.1);
             text-align: center;
+            @include tablet {
+                gap: 3.2rem;
+            }
+            @include mobile {
+                display: block;
+                width: 100%;
+                height: 84%;
+                padding: 1.6rem;
+                gap: 1.2rem;
+            }
             .work-contents {
                 display: flex;
                 flex-direction: column;
                 gap: 2.4rem;
-                :not(:first-child) {
+                @include tablet {
+                    gap: 1.6rem;
+                }
+                @include mobile {
+                    display: block;
+                }
+                + .work-contents {
+                    @include mobile {
+                        margin-top: 1.6rem;
+                    }
+                }
+                > :not(:first-child) {
                     color: #888;
+                    @include mobile {
+                        margin-top: 0.8rem;
+                    }
                 }
                 ul {
                     display: flex;
                     justify-content: center;
                     gap: 1.2rem;
+                    flex-wrap: wrap;
                     li {
                         font-size: 1.6rem;
                     }

@@ -182,6 +182,12 @@ definePageMeta({
         h2 {
             padding: 4rem;
             text-align: left;
+            @include tablet {
+                padding: 2rem;
+            }
+            @include mobile {
+                padding: 1.2rem;
+            }
         }
         section {
             padding: 12rem 4rem;
@@ -189,9 +195,20 @@ definePageMeta({
             display: flex;
             justify-content: space-between;
             background: var(--on-background-color);
+            @include tablet {
+                padding: 12rem 2rem;
+            }
+            @include mobile {
+                padding: 6rem 1.2rem 6rem 5.2rem;
+                flex-direction: column;
+                gap: 3.6rem;
+            }
             > * {
                 display: block;
                 width: 46%;
+                @include mobile {
+                    width: 100%;
+                }
             }
             &:before {
                 content: '';
@@ -203,6 +220,10 @@ definePageMeta({
                 right: 0;
                 margin: 0 auto;
                 z-index: 10;
+                @include mobile {
+                    margin: 0;
+                    left: 2.2rem;
+                }
             }
             &:after {
                 content: '';
@@ -216,6 +237,11 @@ definePageMeta({
                 margin: 0 auto;
                 z-index: 20;
                 background: var(--on-background-color);
+                @include mobile {
+                    margin: 0;
+                    left: 1.2rem;
+                    top: 44%;
+                }
             }
             &.smilegate-section {
                 &:before {
@@ -253,14 +279,25 @@ definePageMeta({
             }
             .summary-wrap {
                 text-align: center;
+                @include mobile {
+                    text-align: left;
+                }
                 .img-logo {
                     width: 50%;
+                    @include mobile {
+                        width: 64%;
+                    }
                 }
                 ul {
                     display: flex;
                     justify-content: center;
                     gap: 0.4rem;
                     margin-top: 4rem;
+                    @include mobile {
+                        justify-content: flex-start;
+                        flex-wrap: wrap;
+                        margin-top: 1.2rem;
+                    }
                 }
             }
             .job-list-wrap {
@@ -277,6 +314,9 @@ definePageMeta({
                         i {
                             flex: none;
                             margin-top: 1.5rem;
+                            @include mobile {
+                                margin-top: 1rem;
+                            }
                         }
                     }
                 }
@@ -284,12 +324,22 @@ definePageMeta({
             &:nth-child(2n-1) {
                 flex-direction: row-reverse;
                 background: var(--on-background-color-2);
+                @include mobile {
+                    flex-direction: column;
+                }
                 .job-list-wrap {
                     text-align: right;
+                    @include mobile {
+                        text-align: left;
+                    }
                     ul {
                         li {
                             justify-content: right;
                             flex-direction: row-reverse;
+                            @include mobile {
+                                justify-content: left;
+                                flex-direction: row;
+                            }
                         }
                     }
                 }
