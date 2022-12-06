@@ -10,7 +10,7 @@ cache:
 build:
     stage: build
     script:
-        - npm run nuxt build
+        - npm run build
 
 deploy:
     stage: deploy
