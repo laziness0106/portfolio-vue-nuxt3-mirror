@@ -1,6 +1,7 @@
 @import 'common/reset.scss';
 @import 'common/font.scss';
 @import 'common/normalize.scss';
+@import 'aos/dist/aos.css';
 
 /* default style */
 html,
@@ -35,11 +36,11 @@ span {
     position: absolute;
     clip: rect(0, 0, 0, 0);
     clip-path: polygon(0 0, 0 0, 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
     overflow: hidden;
-    white-spath: nowrap;
+    white-space: nowrap;
 }
 
 .layout-enter-active,
