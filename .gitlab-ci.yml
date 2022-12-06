@@ -1,18 +1,18 @@
 image: node
 
 before_script:
-    - npm install
+    - npm install --cache node_modules
 
 cache:
     paths:
         - node_modules/
 
-build-job:
+build:
     stage: build
     script:
-        - nuxt build
+        - npm run nuxt build
 
-deploy-prod:
+deploy:
     stage: deploy
     script:
         - npm run generate
