@@ -8,6 +8,6 @@ export default defineNuxtPlugin((nuxtApp) => {
             duration: 600,
             easing: 'ease-in-out-cubic',
             once: true,
-        }); // eslint-disable-line new-cap
+        });
     }
 });
