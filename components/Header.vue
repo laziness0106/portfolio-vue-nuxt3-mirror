@@ -3,7 +3,7 @@
         <NuxtLink to="/">
             <CLogo />
         </NuxtLink>
-        <Gnb v-show="isActive" @clickGnb="updateStatus" />
+        <Gnb v-show="isActive" @click-gnb="updateStatus" />
         <button
             class="btn-close"
             :class="{ active: isActive, inActive: !isActive }"
