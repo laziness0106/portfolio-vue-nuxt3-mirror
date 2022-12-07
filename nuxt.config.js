@@ -1,7 +1,46 @@
 import eslintPlugin from 'vite-plugin-eslint';
 
 export default defineNuxtConfig({
-    target: 'static',
+    head: {
+        title: 'portfolio-vue-nuxt3',
+        meta: [
+            { charset: 'utf-8' },
+            {
+                name: 'viewport',
+                content: 'width=device-width, initial-scale=1',
+            },
+            {
+                hid: 'description',
+                name: 'og:description',
+                content: 'shhong portfolio',
+            },
+            {
+                name: 'og:title',
+                content: 'portfolio-vue-nuxt3',
+            },
+            {
+                name: 'og:keywords',
+                content: 'portfolio, vue, nuxt',
+            },
+            {
+                name: 'og:image',
+                content: '@/assets/images/thumbnail.png',
+            },
+            {
+                name: 'og:author',
+                content: 'shhong',
+            },
+        ],
+        link: [
+            {
+                rel: 'icon',
+                type: 'image/png',
+                href: '@/assets/images/favicon.png',
+            },
+        ],
+    },
+    target: 'server',
+    ssr: true,
     router: {
         base: '/portfolio-vue-nuxt3/',
     },
