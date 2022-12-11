@@ -37,8 +37,5 @@
         "sass": "^1.56.1",
         "sass-loader": "^13.2.0",
         "vite-plugin-eslint": "^1.8.1"
-    },
-    "dependencies": {
-        "aos": "^2.3.4"
     }
 }
