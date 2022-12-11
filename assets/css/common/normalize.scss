@@ -2,6 +2,10 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    font-size: 62.5%;
 }
 
 *,
@@ -10,25 +14,9 @@ html {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
-}
-
-*,
-*:before,
-*:after {
     overflow-wrap: normal;
     word-break: normal;
     word-wrap: break-word;
-}
-
-html {
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
-    text-size-adjust: none;
-}
-
-html {
-    font-family: 'Spoqa Han Sans Neo KR';
-    font-size: 62.5%;
 }
 
 body {
@@ -55,4 +43,31 @@ em {
 a {
     outline-width: 0px;
     text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: inherit;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    font-size: 100%;
+    font-family: inherit;
+    cursor: pointer;
+}
+button:focus,
+button:active {
+    outline: none;
+}
+button:active {
+    opacity: 0.9;
 }

@@ -1,2 +1,64 @@
 @import 'common/reset.scss';
+@import 'common/font.scss';
 @import 'common/normalize.scss';
+@import 'aos/dist/aos.css';
+
+/* default style */
+html,
+body {
+    font-family: 'Spoqa Han Sans Neo', 'Apple SD Gothic Neo', 'Malgun Gothic',
+        '맑은 고딕', sans-serif;
+    color: var(--text-color);
+}
+
+/* font style title */
+h1 {
+    @include font-h1();
+}
+h2 {
+    @include font-h2();
+}
+h3 {
+    @include font-h3();
+}
+
+/* font style content */
+p,
+span {
+    @include font-content();
+}
+.font-cap {
+    @include font-cap();
+}
+
+/* AOA11Y */
+.ally-hidden {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.layout-enter-active,
+.layout-leave-active {
+    transition: all 0.4s;
+}
+.layout-enter-from,
+.layout-leave-to {
+    opacity: 0;
+    filter: blur(1rem);
+}
+
+.page-enter-active,
+.page-leave-active {
+    transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+    opacity: 0;
+    filter: blur(1rem);
+}

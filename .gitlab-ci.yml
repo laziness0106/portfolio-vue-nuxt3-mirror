@@ -1,0 +1,18 @@
+image: node
+
+before_script:
+    - npm install --cache node_modules
+
+cache:
+    paths:
+        - node_modules/
+
+build:
+    stage: build
+    script:
+        - npm run build
+
+deploy:
+    stage: deploy
+    script:
+        - npm run generate
