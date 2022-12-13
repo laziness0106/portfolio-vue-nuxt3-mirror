@@ -25,7 +25,6 @@ export default {
     },
     methods: {
         updateStatus(data) {
-            console.log(data);
             this.isActive = data;
         },
     },

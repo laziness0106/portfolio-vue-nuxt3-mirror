@@ -126,7 +126,7 @@
                 </li>
             </ul>
         </section>
-        <section class="contact-section contact-section">
+        <section class="contact-section">
             <h3 data-aos="fade-up" data-aos-delay="200">연락주세요</h3>
             <p>
                 <strong data-aos="fade-up" data-aos-delay="400">
@@ -351,6 +351,9 @@ definePageMeta({
                         }
                         &:nth-child(2) {
                             color: var(--secondary-color);
+                        }
+                        a {
+                            word-break: break-word;
                         }
                     }
                 }

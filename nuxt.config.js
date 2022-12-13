@@ -62,11 +62,6 @@ export default defineNuxtConfig({
             },
         },
         plugins: [
-            {
-                src: '@/plugins/aos',
-                ssr: false,
-                mode: 'client',
-            },
             eslintPlugin({
                 failOnError: false,
                 cache: false,
