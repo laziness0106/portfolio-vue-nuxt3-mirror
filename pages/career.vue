@@ -171,12 +171,12 @@
 
 <script>
 definePageMeta({
-    layout: 'main',
+    layout: 'default',
 });
 </script>
 
 <style lang="scss" scoped>
-.layout-main {
+.layout-default {
     .page-container {
         padding: 8.4rem 0;
         h2 {
