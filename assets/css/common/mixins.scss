@@ -11,40 +11,43 @@
     }
 }
 @mixin font-h2() {
-    font-size: 4rem;
-    line-height: 4.8rem;
-    font-weight: bold;
-    @include tablet {
-        font-size: 3.6rem;
-    }
-    @include mobile {
-        font-size: 3.2rem;
-    }
-}
-@mixin font-h3() {
     font-size: 2.8rem;
-    line-height: 4rem;
-    font-weight: bold;
+    line-height: 3.6rem;
     @include tablet {
-        font-size: 2.4rem;
+        font-size: 2rem;
+        line-height: 2.4rem;
     }
     @include mobile {
         font-size: 2rem;
+        line-height: 2.4rem;
+    }
+}
+@mixin font-h3() {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    @include tablet {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    @include mobile {
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
 }
 
 /* font style content */
 @mixin font-content() {
-    font-size: 2rem;
-    line-height: 3.6rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     font-weight: normal;
     @include tablet {
-        font-size: 1.6rem;
-        line-height: 2.8rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
     @include mobile {
-        font-size: 1.6rem;
-        line-height: 2.8rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
 }
 @mixin font-cap() {
