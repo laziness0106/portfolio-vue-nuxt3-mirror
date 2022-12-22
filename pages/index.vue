@@ -63,8 +63,43 @@
                 </div>
                 <img class="img-char-me" src="@/assets/images/img-char-me.png" />
             </section>
-            <section class="section">
-                section03
+            <section class="section work-list-section">
+                <h2>WORK</h2>
+                <ul class="work-list">
+                    <li data-menuanchor="smilegate"><a href="#smilegate">SMILEGATE</a></li>
+                    <li data-menuanchor="dominos"><a href="#dominos">Domino's Pizza</a></li>
+                    <li data-menuanchor="jestina"><a href="#jestina">J.ESTINA</a></li>
+                </ul>
+            </section>
+            <section class="section work-section smilegate">
+                <h2>Smilegate STOVE</h2>
+                <p>
+                    <h3>주요 프로젝트</h3>
+                    <ul>
+                        <li>디자인시스템</li>
+                        <li>에픽세븐 인게임 커뮤니티 개선</li>
+                    </ul>
+                </p>
+            </section>
+            <section class="section work-section dominos">
+                <h2>Domino's Pizza</h2>
+                <p>
+                    <h3>주요 프로젝트</h3>
+                    <ul>
+                        <li>디자인시스템</li>
+                        <li>에픽세븐 인게임 커뮤니티 개선</li>
+                    </ul>
+                </p>
+            </section>
+            <section class="section work-section jestina">
+                <h2>J.ESTINA</h2>
+                <p>
+                    <h3>주요 프로젝트</h3>
+                    <ul>
+                        <li>디자인시스템</li>
+                        <li>에픽세븐 인게임 커뮤니티 개선</li>
+                    </ul>
+                </p>
             </section>
         </full-page>
     </div>
@@ -80,12 +115,18 @@ export default {
             options: {
                 licenseKey: 'YOUR_KEY_HERE',
                 scrollBar: false,
-                menu: '.gnb',
+                menu: [
+                    '.gnb',
+                    '.work-list',
+                ],
                 navigation: true,
                 anchors: [
                     'section01',
                     'section02',
                     'section03',
+                    'smilegate',
+                    'dominos',
+                    'jestina',
                 ],
             },
         }
@@ -209,6 +250,20 @@ export default {
                     right: 5%;
                     bottom: 5%;
                     width: 20%;
+                }
+            }
+            &.work-section {
+                &.smilegate {
+                    background: url(@/assets/images/bg-stove.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                &.dominos {
+                    background: skyblue;
+                }
+                &.jestina {
+                    background: pink;
                 }
             }
             .fp-watermark {
