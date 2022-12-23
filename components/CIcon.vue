@@ -1,5 +1,14 @@
 <template>
-    <i :class="[typeClass, sizeClass]">
+    <i v-if="type == 'ic-scroll-btn'" :class="[typeClass]">
+        <span class="mouse">
+            <span></span>
+        </span>
+        <i class="ic-arrow-down">
+            <span></span>
+        </i>
+    </i>
+
+    <i v-else :class="[typeClass, sizeClass]">
         <span class="ally-hidden">{{ typeClass }}</span>
     </i>
 </template>
@@ -22,6 +31,7 @@ export default {
          * 'ic-lang-jquery'
          * 'ic-lang-javascript'
          * 'ic-lang-bootstrap'
+         * 'ic-scroll-btn'
          */
         type: {
             type: String,
@@ -106,6 +116,91 @@ i {
     }
     &.ic-lang-bootstrap {
         background-image: url(@/assets/images/icons/ic-lang-bootstrap.svg);
+    }
+    &.ic-scroll-btn {
+        .mouse {
+            position: relative;
+            display: block;
+            width: 3.5rem;
+            height: 5.5rem;
+            margin: 0 auto 0.4rem;
+            border: 0.3rem solid white;
+            border-radius: 2.3rem;
+            opacity: 0.75;
+            z-index: 1;
+    
+            span {
+                position: absolute;
+                display: block;
+                top: 29%;
+                left: 50%;
+                width: 8px;
+                height: 8px;
+                margin: -0.4rem 0 0 -0.4rem;
+                background: white;
+                border-radius: 50%;
+                animation: ani-mouse 2.5s linear infinite;
+            }
+        }
+    
+        .ic-arrow-down {
+            text-align: center;
+            span {
+                display: inline-block;
+                width: 1.5rem;
+                height: 1.5rem;
+                border: 0.3rem solid transparent;
+                border-right-color: rgb(210 210 215 / 75%);
+                border-bottom-color: rgb(210 210 215 / 75%);
+                border-radius: 0.3rem;
+                transform: rotate(45deg);
+                animation: arrow-down 0.6s alternate infinite;
+            }
+        }
+    }
+}
+
+@keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        transform: translate(0, 29%);
+    }
+
+    15% {
+        opacity: 1;
+        transform: translate(0, 150%);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translate(0, 150%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0, 29%);
+    }
+}
+
+@keyframes arrow-down {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 </style>
