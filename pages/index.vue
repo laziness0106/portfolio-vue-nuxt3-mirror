@@ -14,6 +14,7 @@
                     <img src="@/assets/images/logo-main.png" alt="hong soon hyun" />
                     <figcaption>2019-2022 홍순현</figcaption>
                 </figure>
+                <CIcon type="ic-scroll-btn" />
             </section>
             <section class="section pr-section">
                 <div class="content-wrap">
@@ -64,25 +65,53 @@
                 <img class="img-char-me" src="@/assets/images/img-char-me.png" />
             </section>
             <section class="section work-list-section">
-                <h2>WORK</h2>
+                <h2 class="ally-hidden">WORK</h2>
                 <ul class="work-list">
-                    <li data-menuanchor="smilegate"><a href="#smilegate">SMILEGATE</a></li>
-                    <li data-menuanchor="dominos"><a href="#dominos">Domino's Pizza</a></li>
-                    <li data-menuanchor="jestina"><a href="#jestina">J.ESTINA</a></li>
+                    <li data-menuanchor="smilegate" class="smilegate">
+                        <a href="#smilegate">
+                            <h3>SMILEGATE</h3>
+                            <ul class="project-list">
+                                <li>디자인시스템</li>
+                                <li>에픽세븐 인게임 웹뷰</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li data-menuanchor="dominos" class="dominos">
+                        <a href="#dominos">
+                            <h3>Domino's Pizza</h3>
+                            <ul class="project-list">
+                                <li>간편결제 퀵오더</li>
+                                <li>도미노SPOT 드론배달</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li data-menuanchor="jestina" class="jestina">
+                        <a href="#jestina">
+                            <h3>J.ESTINA</h3>
+                            <ul class="project-list">
+                                <li>메인페이지 개편</li>
+                                <li>시계·핸드백 DIY</li>
+                            </ul>
+                        </a>
+                    </li>
                 </ul>
             </section>
             <section class="section work-section smilegate">
-                <h2>Smilegate STOVE</h2>
+                <h3>Smilegate STOVE</h3>
+                <p>
+                    <h4>OVERVIEW</h4>
+                    로스트아크, 크로스파이어, 에픽세븐 등을 서비스 중인 
+                </p>
                 <p>
                     <h3>주요 프로젝트</h3>
                     <ul>
                         <li>디자인시스템</li>
-                        <li>에픽세븐 인게임 커뮤니티 개선</li>
+                        <li>에픽세븐 인게임 웹뷰 컨텐츠 개선</li>
                     </ul>
                 </p>
             </section>
             <section class="section work-section dominos">
-                <h2>Domino's Pizza</h2>
+                <h3>Domino's Pizza</h3>
                 <p>
                     <h3>주요 프로젝트</h3>
                     <ul>
@@ -92,7 +121,7 @@
                 </p>
             </section>
             <section class="section work-section jestina">
-                <h2>J.ESTINA</h2>
+                <h3>J.ESTINA</h3>
                 <p>
                     <h3>주요 프로젝트</h3>
                     <ul>
@@ -171,6 +200,16 @@ export default {
                         font-weight: 100;
                         color: #ffffff;
                     }
+                }
+                .ic-scroll-btn {
+                    position: absolute;
+                    bottom: 5%;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    display: block;
+                    text-align: center;
+                    color: white;
                 }
             }
             &.pr-section {
@@ -252,12 +291,94 @@ export default {
                     width: 20%;
                 }
             }
+            &.work-list-section {
+                .work-list {
+                    display: flex;
+                    flex-direction: row;
+                    column-gap: 1.2rem;
+                    width: 72%;
+                    height: 60%;
+                    li {
+                        flex: 1;
+                        text-align: center;
+                        border-radius: 0.2rem;
+                        color: white;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            background-color: transparent;
+                            transform: scale(1.07);
+                            transition: all .3s ease-in-out;
+                            z-index: 10;
+                            &.smilegate {
+                                a {
+                                    transition: all .3s ease-in-out;
+                                    background-color: var(--smilegate-bg-color);
+                                    outline: 0.6rem inset var(--smilegate-bg-color);
+                                    border: 0.6rem solid #ffffff;
+                                }
+                            }
+                        
+                            &.dominos {
+                                a {
+                                    transition: all .3s ease-in-out;
+                                    background-color: var(--dominos-bg-color);
+                                    outline: 0.6rem inset var(--dominos-bg-color);
+                                    border: 0.6rem solid #ffffff;
+                                }
+                            }
+                        
+                            &.jestina {
+                                a {
+                                    transition: all .3s ease-in-out;
+                                    background-color: var(--jestina-bg-color);
+                                    outline: 0.6rem inset var(--jestina-bg-color);
+                                    border: 0.6rem solid #ffffff;
+                                }
+                            }
+                        }
+                        a {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 40% 0;
+                            height: 100%;
+                            h3 {
+                                font-size: 2.8rem;
+                                line-height: 3.2rem;
+                                font-weight: 400;
+                            }
+                            .project-list {
+                                li {
+                                    @include font-content();
+                                }
+                            }
+                        }
+                        &.smilegate {
+                            background: url(@/assets/images/bg-lostark.jpg) no-repeat;
+                            background-position: 48% 68%;
+                        }
+        
+                        &.dominos {
+                            background: url(@/assets/images/bg-dominos.jpg) no-repeat;
+                            background-position: 0% 84%;
+                        }
+        
+                        &.jestina {
+                            background: url(@/assets/images/bg-jestina.jpg) no-repeat;
+                            background-position: 30% 46%;
+                        }
+                    }
+                }
+            }
             &.work-section {
+                .fp-overflow {
+                    background: rgba(0, 0, 0, 0.4);
+                    color: #ffffff;
+                }
                 &.smilegate {
-                    background: url(@/assets/images/bg-stove.jpg);
-                    background-position: center;
+                    background: url(@/assets/images/bg-lostark.jpg);
+                    background-position: 46% 66%;
                     background-repeat: no-repeat;
-                    background-size: cover;
                 }
                 &.dominos {
                     background: skyblue;
