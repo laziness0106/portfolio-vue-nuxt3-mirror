@@ -97,38 +97,61 @@
                 </ul>
             </section>
             <section class="section work-section smilegate">
-                <h3>Smilegate STOVE</h3>
-                <p>
-                    <h4>OVERVIEW</h4>
-                    로스트아크, 크로스파이어, 에픽세븐 등을 서비스 중인 
-                </p>
-                <p>
-                    <h3>주요 프로젝트</h3>
-                    <ul>
-                        <li>디자인시스템</li>
-                        <li>에픽세븐 인게임 웹뷰 컨텐츠 개선</li>
-                    </ul>
-                </p>
+                <div class="content-wrap">
+                    <h3>Smilegate STOVE</h3>
+                    <p>
+                        <h4>OVERVIEW</h4>
+                        <span>대표작으로 로스트아크, 크로스파이어, 에픽세븐 등을 서비스 중인 게임 업체입니다. 그 중 웹 사이트와 클라이언트 등을 서비스하는 STOVE에서 프론트개발과 마크업 파트를 담당했습니다.</span>
+                    </p>
+                    <p>
+                        <h4>PROJECT</h4>
+                        <ul>
+                            <li>디자인시스템</li>
+                            <li>에픽세븐 인게임 웹뷰</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="content-wrap">
+                    <img src="@/assets/images/img-work-stove.png" alt="Stove Mockup">
+                </div>
             </section>
             <section class="section work-section dominos">
-                <h3>Domino's Pizza</h3>
-                <p>
-                    <h3>주요 프로젝트</h3>
-                    <ul>
-                        <li>디자인시스템</li>
-                        <li>에픽세븐 인게임 커뮤니티 개선</li>
-                    </ul>
-                </p>
+                <div class="content-wrap">
+                    <h3>Domino's Pizza</h3>
+                    <p>
+                        <h4>OVERVIEW</h4>
+                        <span>전 세계 70개국, 1만 개 이상의 점포를 두고 있는 피자 전문 배달 브랜드입니다. 온라인 주문배달을 위한 웹 및 앱 환경의 UI개발과 마크업을 담당했습니다.</span>
+                    </p>
+                    <p>
+                        <h4>PROJECT</h4>
+                        <ul>
+                            <li>간편결제 퀵오더</li>
+                            <li>도미노SPOT 드론배달</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="content-wrap">
+                    <img src="@/assets/images/img-work-dominos.png" alt="Domino's Pizza Mockup">
+                </div>
             </section>
             <section class="section work-section jestina">
-                <h3>J.ESTINA</h3>
-                <p>
-                    <h3>주요 프로젝트</h3>
-                    <ul>
-                        <li>디자인시스템</li>
-                        <li>에픽세븐 인게임 커뮤니티 개선</li>
-                    </ul>
-                </p>
+                <div class="content-wrap">
+                    <h3>J.ESTINA</h3>
+                    <p>
+                        <h4>OVERVIEW</h4>
+                        <span>김연아, 아이유 등을 모델로 내세운 국내 최상위 주얼리 브랜드입니다. 온라인 플랫폼 확장을 위한 플랫폼운영 부서에서 기획과 마크업을 담당했습니다.</span>
+                    </p>
+                    <p>
+                        <h4>PROJECT</h4>
+                        <ul>
+                            <li>메인페이지 개편</li>
+                            <li>시계·핸드백 DIY</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="content-wrap">
+                    <img src="@/assets/images/img-work-jestina.png" alt="Stove Mockup">
+                </div>
             </section>
         </full-page>
     </div>
@@ -180,7 +203,6 @@ export default {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 25px;
             }
             &.main-section {
                 background-color: var(--primary-color);
@@ -371,20 +393,83 @@ export default {
                 }
             }
             &.work-section {
+                &:before {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: inherit;
+                    -webkit-filter: blur(0.28rem);
+                    -moz-filter: blur(0.28rem);
+                    -o-filter: blur(0.28rem);
+                    -ms-filter: blur(0.28rem);
+                    filter: blur(0.28rem);
+                }
                 .fp-overflow {
                     background: rgba(0, 0, 0, 0.4);
                     color: #ffffff;
+                    column-gap: 2%;
+                }
+                .content-wrap {
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3.6rem;
+                    position: relative;
+
+                    &:last-child {
+                        width: 40%;
+                    }
+                    h3,
+                    h4 {
+                        font-weight: bold;
+                        word-break: keep-all;
+                    }
+                    h3 {
+                        @include font-title();
+                        margin-bottom: 8rem;
+                    }
+                    h4 {
+                        @include font-subtitle();
+                        margin-bottom: 0.8rem;
+                    }
                 }
                 &.smilegate {
+                    background: var(--smilegate-bg-color);
                     background: url(@/assets/images/bg-lostark.jpg);
                     background-position: 46% 66%;
                     background-repeat: no-repeat;
+                    .content-wrap {
+                        h3, h4 {
+                            color: var(--smilegate-color);
+                        }
+                    }
                 }
                 &.dominos {
-                    background: skyblue;
+                    background: var(--dominos-bg-color);
+                    background: url(@/assets/images/bg-dominos02.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    .content-wrap {
+                        h3,
+                        h4 {
+                            color: var(--dominos-color);
+                        }
+                    }
                 }
                 &.jestina {
-                    background: pink;
+                    background: var(--jestina-bg-color);
+                    background: url(@/assets/images/bg-jestina02.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    .content-wrap {
+                        h3,
+                        h4 {
+                            color: var(--jestina-color);
+                        }
+                    }
                 }
             }
             .fp-watermark {

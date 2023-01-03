@@ -37,6 +37,20 @@
 }
 
 /* font style content */
+@mixin font-title() {
+    font-size: 5.6rem;
+    line-height: 6.0rem;
+    @include tablet {}
+
+    @include mobile {}
+}
+@mixin font-subtitle() {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    @include tablet {}
+
+    @include mobile {}
+}
 @mixin font-content() {
     font-size: 1.6rem;
     line-height: 2.4rem;
