@@ -61,7 +61,7 @@
                         </li>
                     </ul>
                 </div>
-                <img class="img-char-me" src="@/assets/images/img-char-me.png" />
+                <img class="img-char-me" src="@/assets/images/img-char-me.png" alt="hong soon hyun" />
             </section>
             <section class="section work-list-section">
                 <h2 class="ally-hidden">WORK</h2>
