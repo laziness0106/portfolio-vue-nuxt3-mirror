@@ -174,13 +174,13 @@ export default {
                 licenseKey: 'YOUR_KEY_HERE',
                 scrollBar: false,
                 menu: [
-                    '.work-list',
+                    '.work',
                 ],
                 navigation: true,
                 anchors: [
                     'main',
                     'pr',
-                    'work-list',
+                    'work',
                     'smilegate',
                     'dominos',
                     'jestina',
