@@ -1,17 +1,16 @@
 <template>
     <div class="page-container">
-        <nav>
+        <!-- <nav>
             <ul class="gnb">
-                <li data-menuanchor="section01"><a href="#section01">section01</a></li>
-                <li data-menuanchor="section02"><a href="#section02">section02</a></li>
-                <li data-menuanchor="section03"><a href="#section03">section03</a></li>
+                <li data-menuanchor="pr"><a href="#pr">PROFILE</a></li>
+                <li data-menuanchor="work-list"><a href="#work-list">WORK</a></li>
             </ul>
-        </nav>
+        </nav> -->
         <full-page :options="options">
             <section class="section main-section">
                 <h1 class="ally-hidden">홍순현 포트폴리오</h1>
                 <figure class="logo-main">
-                    <img src="@/assets/images/logo-main.png" alt="hong soon hyun" />
+                    <img src="@/assets/images/logo-main.png" alt="Portfolio" />
                     <figcaption>2019-2022 홍순현</figcaption>
                 </figure>
                 <CIcon type="ic-scroll-btn" />
@@ -153,6 +152,13 @@
                     <img src="@/assets/images/img-work-jestina.png" alt="Stove Mockup">
                 </div>
             </section>
+            <section class="section end-section">
+                <h2 class="ally-hidden">감사합니다.</h2>
+                <figure class="logo-end">
+                    <img src="@/assets/images/logo-end.png" alt="Thank you" />
+                    <figcaption>끝까지 봐주셔서 감사합니다</figcaption>
+                </figure>
+            </section>
         </full-page>
     </div>
 </template>
@@ -173,12 +179,13 @@ export default {
                 ],
                 navigation: true,
                 anchors: [
-                    'section01',
-                    'section02',
-                    'section03',
+                    'main',
+                    'pr',
+                    'work-list',
                     'smilegate',
                     'dominos',
                     'jestina',
+                    'end',
                 ],
             },
         }
@@ -319,7 +326,7 @@ export default {
                     flex-direction: row;
                     column-gap: 1.2rem;
                     width: 72%;
-                    height: 60%;
+                    height: 68%;
                     li {
                         flex: 1;
                         text-align: center;
@@ -469,6 +476,29 @@ export default {
                         h4 {
                             color: var(--jestina-color);
                         }
+                    }
+                }
+            }
+            &.end-section {
+                background-color: var(--primary-color);
+                display: flex;
+                align-items: center;
+
+                .logo-end {
+                    width: 34%;
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    figcaption {
+                        position: absolute;
+                        right: 36.9%;
+                        bottom: 27%;
+                        font-size: 1vw;
+                        font-weight: 100;
+                        color: #ffffff;
                     }
                 }
             }
