@@ -9,6 +9,9 @@ export default defineNuxtConfig({
     css: ['~/assets/css/base.scss'],
     app: {
         head: {
+            htmlAttrs: {
+                lang: 'ko',
+            },
             title: 'portfolio-vue-nuxt3',
             meta: [
                 { charset: 'utf-8' },
