@@ -174,7 +174,6 @@ export default {
                 licenseKey: 'YOUR_KEY_HERE',
                 scrollBar: false,
                 menu: [
-                    '.gnb',
                     '.work-list',
                 ],
                 navigation: true,
