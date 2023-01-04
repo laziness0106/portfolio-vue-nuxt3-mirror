@@ -134,12 +134,12 @@ i {
                 display: block;
                 top: 29%;
                 left: 50%;
-                width: 8px;
-                height: 8px;
+                width: 0.8rem;
+                height: 0.8rem;
                 margin: -0.4rem 0 0 -0.4rem;
                 background: white;
                 border-radius: 50%;
-                animation: ani-mouse 2.5s linear infinite;
+                animation: ani-mouse 1.8s linear infinite;
             }
         }
     
