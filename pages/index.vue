@@ -203,19 +203,27 @@ export default {
         > section {
             width: 100%;
             height: 100vh;
+            align-items: center;
             .fp-overflow {
-                width: 100%;
+                width: 102.4rem;
                 height: 100vh;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @include tablet {
+                    width: 100%;
+                }
+            
+                @include mobile {
+                    width: 100%;
+                }
             }
             &.main-section {
                 background-color: var(--primary-color);
                 display: flex;
                 align-items: center;
                 .logo-main {
-                    width: 34%;
+                    width: 50%;
                     position: relative;
                     img {
                         width: 100%;
@@ -223,7 +231,7 @@ export default {
                     figcaption {
                         position: absolute;
                         right: 0;
-                        bottom: 27%;
+                        bottom: 29%;
                         font-size: 1vw;
                         font-weight: 100;
                         color: #ffffff;
@@ -245,7 +253,7 @@ export default {
                     column-gap: 8%;
                 }
                 .content-wrap {
-                    width: 32%;
+                    width: 45%;
                     display: flex;
                     flex-direction: column;
                     gap: 1.4rem;
@@ -324,7 +332,7 @@ export default {
                     display: flex;
                     flex-direction: row;
                     column-gap: 1.2rem;
-                    width: 72%;
+                    width: 94%;
                     height: 68%;
                     li {
                         flex: 1;
@@ -416,10 +424,10 @@ export default {
                 .fp-overflow {
                     background: rgba(0, 0, 0, 0.4);
                     color: #ffffff;
-                    column-gap: 2%;
+                    column-gap: 4%;
                 }
                 .content-wrap {
-                    width: 30%;
+                    width: 55%;
                     display: flex;
                     flex-direction: column;
                     gap: 3.6rem;
@@ -484,7 +492,7 @@ export default {
                 align-items: center;
 
                 .logo-end {
-                    width: 34%;
+                    width: 50%;
                     position: relative;
 
                     img {
@@ -493,7 +501,7 @@ export default {
 
                     figcaption {
                         position: absolute;
-                        right: 36.9%;
+                        right: 39.2%;
                         bottom: 27%;
                         font-size: 1vw;
                         font-weight: 100;
