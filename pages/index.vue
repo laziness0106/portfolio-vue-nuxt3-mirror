@@ -247,6 +247,14 @@ export default {
                     text-align: center;
                     color: white;
                 }
+                &.active {
+                    .logo-main {
+                        @include fadeInUp(0.8s);
+                    }
+                    .ic-scroll-btn {
+                        @include fadeInUp(1.2s);
+                    }
+                }
             }
             &.pr-section {
                 .fp-overflow {
@@ -326,6 +334,35 @@ export default {
                     bottom: 5%;
                     width: 20%;
                 }
+                &.active {
+                    .content-wrap {
+                        .img-do-ones-own {
+                            @include fadeInUp(0.8s);
+                        }
+                
+                        hr {
+                            @include fadeInUp(0.8s);
+                        }
+                
+                        h2 {
+                            @include fadeInUp(1.2s);
+                        }
+                
+                        p {
+                            @include fadeInUp(1.2s);
+                        }
+                        
+                        &:nth-child(2) {
+                            .profile-item {
+                                @include fadeInUp(1.6s);
+                            }
+                        }
+                    }
+                
+                    .img-char-me {
+                        @include fadeInRight(2s);
+                    }
+                }
             }
             &.work-list-section {
                 .work-list {
@@ -349,8 +386,6 @@ export default {
                                 a {
                                     transition: all .3s ease-in-out;
                                     background-color: var(--smilegate-bg-color);
-                                    outline: 0.6rem inset var(--smilegate-bg-color);
-                                    border: 0.6rem solid #ffffff;
                                 }
                             }
                         
@@ -358,8 +393,6 @@ export default {
                                 a {
                                     transition: all .3s ease-in-out;
                                     background-color: var(--dominos-bg-color);
-                                    outline: 0.6rem inset var(--dominos-bg-color);
-                                    border: 0.6rem solid #ffffff;
                                 }
                             }
                         
@@ -367,8 +400,6 @@ export default {
                                 a {
                                     transition: all .3s ease-in-out;
                                     background-color: var(--jestina-bg-color);
-                                    outline: 0.6rem inset var(--jestina-bg-color);
-                                    border: 0.6rem solid #ffffff;
                                 }
                             }
                         }
@@ -402,6 +433,23 @@ export default {
                         &.jestina {
                             background: url(@/assets/images/bg-jestina.jpg) no-repeat;
                             background-position: 30% 46%;
+                        }
+                    }
+                }
+                &.active {
+                    .work-list {
+                        li {
+                            &.smilegate {
+                                @include fadeInUp(0.4s);
+                            }
+                
+                            &.dominos {
+                                @include fadeInUp(0.8s);
+                            }
+                
+                            &.jestina {
+                                @include fadeInUp(1.2s);
+                            }
                         }
                     }
                 }
@@ -485,6 +533,19 @@ export default {
                         }
                     }
                 }
+                &.active {
+                    .content-wrap {
+                        h3 {
+                            @include fadeInUp(0.8s);
+                        }
+                        p {
+                            @include fadeInUp(1.2s);
+                        }
+                        &:last-child {
+                            @include fadeInUp(1.6s);
+                        }
+                    }
+                }
             }
             &.end-section {
                 background-color: var(--primary-color);
@@ -501,11 +562,16 @@ export default {
 
                     figcaption {
                         position: absolute;
-                        right: 39.2%;
+                        left: 30.2%;
                         bottom: 27%;
                         font-size: 1vw;
                         font-weight: 100;
                         color: #ffffff;
+                    }
+                }
+                &.active {
+                    .logo-end {
+                        @include fadeInUp(1.2s);
                     }
                 }
             }
