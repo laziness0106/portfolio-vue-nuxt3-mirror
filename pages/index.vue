@@ -17,20 +17,35 @@
             </section>
             <section class="section pr-section">
                 <div class="content-wrap">
-                    <img class="img-do-ones-own" src="@/assets/images/img-do-own.png" alt="Do one's own thing!" />
+                    <img
+                        class="img-do-ones-own"
+                        src="@/assets/images/img-do-own.png"
+                        alt="Do one's own thing!"
+                    />
                     <hr />
-                    <h2>좋아하는 일을 하고있는 <strong>홍순현</strong>입니다.</h2>
+                    <h2>
+                        좋아하는 일을 하고있는 <strong>홍순현</strong>입니다.
+                    </h2>
                     <p>
-                        견고하고 논리적인 구조의 페이지가 깔끔하게 정리된 CSS를 통해 그려지고 서비스에 맞춰 정형화된 UI 컴포넌트들이 유저친화적인 동작들로 사용감을 높여주는 그런 착실한 사이트를 만드는게 저의 일입니다.
+                        견고하고 논리적인 구조의 페이지가 깔끔하게 정리된 CSS를
+                        통해 그려지고 서비스에 맞춰 정형화된 UI 컴포넌트들이
+                        유저친화적인 동작들로 사용감을 높여주는 그런 착실한
+                        사이트를 만드는게 저의 일입니다.
                     </p>
                     <p>
-                        성능과 유지보수의 최적화를 위해 고민하고 사용자 입장에서 생각하는걸 좋아합니다.
-                        그러다보면 어느새 마크업이라는 영역을 벗어나 프론트엔드 개발, 웹 기획 등 다른 분야까지 성큼성큼 발을 딛고 있는 제 자신을 발견할 수 있습니다.
+                        성능과 유지보수의 최적화를 위해 고민하고 사용자 입장에서
+                        생각하는걸 좋아합니다. 그러다보면 어느새 마크업이라는
+                        영역을 벗어나 프론트엔드 개발, 웹 기획 등 다른 분야까지
+                        성큼성큼 발을 딛고 있는 제 자신을 발견할 수 있습니다.
                     </p>
                     <p>
-                        <strong class="subject">좋아하는 일을 더 잘하는 것</strong><br />
+                        <strong class="subject"
+                            >좋아하는 일을 더 잘하는 것</strong
+                        ><br />
                     </p>
-                    <p>그게 바로 제가 꿈꾸는 저의 <strong>목표</strong>입니다.</p>
+                    <p>
+                        그게 바로 제가 꿈꾸는 저의 <strong>목표</strong>입니다.
+                    </p>
                 </div>
                 <div class="content-wrap">
                     <ul class="profile-list">
@@ -54,14 +69,25 @@
                         <li class="profile-item">
                             <h3>Contact</h3>
                             <ul>
-                                <li><a href="tel:01063935118">010 6393 5118</a></li>
-                                <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=valentine15year@gmail.com"
-                                    target="_blank">valentine15year@gmail.com</a></li>
+                                <li>
+                                    <a href="tel:01063935118">010 6393 5118</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=valentine15year@gmail.com"
+                                        target="_blank"
+                                        >valentine15year@gmail.com</a
+                                    >
+                                </li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <img class="img-char-me" src="@/assets/images/img-char-me.png" alt="hong soon hyun" />
+                <img
+                    class="img-char-me"
+                    src="@/assets/images/img-char-me.png"
+                    alt="hong soon hyun"
+                />
             </section>
             <section class="section work-list-section">
                 <h2 class="ally-hidden">WORK</h2>
@@ -98,58 +124,81 @@
             <section class="section work-section smilegate">
                 <div class="content-wrap">
                     <h3>Smilegate STOVE</h3>
-                    <p>
+                    <div>
                         <h4>OVERVIEW</h4>
-                        <span>대표작으로 로스트아크, 크로스파이어, 에픽세븐 등을 서비스 중인 게임 업체입니다. 그 중 웹 사이트와 클라이언트 등을 서비스하는 STOVE에서 프론트개발과 마크업 파트를 담당했습니다.</span>
-                    </p>
-                    <p>
+                        <span
+                            >대표작으로 로스트아크, 크로스파이어, 에픽세븐 등을
+                            서비스 중인 게임 업체입니다. 그 중 웹 사이트와
+                            클라이언트 등을 서비스하는 STOVE에서 프론트개발과
+                            마크업 파트를 담당했습니다.</span
+                        >
+                    </div>
+                    <div>
                         <h4>PROJECT</h4>
                         <ul>
                             <li>디자인시스템</li>
                             <li>에픽세븐 인게임 웹뷰</li>
                         </ul>
-                    </p>
+                    </div>
                 </div>
                 <div class="content-wrap">
-                    <img src="@/assets/images/img-work-stove.png" alt="Stove Mockup">
+                    <img
+                        src="@/assets/images/img-work-stove.png"
+                        alt="Stove Mockup"
+                    />
                 </div>
             </section>
             <section class="section work-section dominos">
                 <div class="content-wrap">
                     <h3>Domino's Pizza</h3>
-                    <p>
+                    <div>
                         <h4>OVERVIEW</h4>
-                        <span>전 세계 70개국, 1만 개 이상의 점포를 두고 있는 피자 전문 배달 브랜드입니다. 온라인 주문배달을 위한 웹 및 앱 환경의 UI개발과 마크업을 담당했습니다.</span>
-                    </p>
-                    <p>
+                        <span
+                            >전 세계 70개국, 1만 개 이상의 점포를 두고 있는 피자
+                            전문 배달 브랜드입니다. 온라인 주문배달을 위한 웹 및
+                            앱 환경의 UI개발과 마크업을 담당했습니다.</span
+                        >
+                    </div>
+                    <div>
                         <h4>PROJECT</h4>
                         <ul>
                             <li>간편결제 퀵오더</li>
                             <li>도미노SPOT 드론배달</li>
                         </ul>
-                    </p>
+                    </div>
                 </div>
                 <div class="content-wrap">
-                    <img src="@/assets/images/img-work-dominos.png" alt="Domino's Pizza Mockup">
+                    <img
+                        src="@/assets/images/img-work-dominos.png"
+                        alt="Domino's Pizza Mockup"
+                    />
                 </div>
             </section>
             <section class="section work-section jestina">
                 <div class="content-wrap">
                     <h3>J.ESTINA</h3>
-                    <p>
+                    <div>
                         <h4>OVERVIEW</h4>
-                        <span>김연아, 아이유 등을 모델로 내세운 국내 최상위 주얼리 브랜드입니다. 온라인 플랫폼 확장을 위한 플랫폼운영 부서에서 기획과 마크업을 담당했습니다.</span>
-                    </p>
-                    <p>
+                        <span
+                            >김연아, 아이유 등을 모델로 내세운 국내 최상위
+                            주얼리 브랜드입니다. 온라인 플랫폼 확장을 위한
+                            플랫폼운영 부서에서 기획과 마크업을
+                            담당했습니다.</span
+                        >
+                    </div>
+                    <div>
                         <h4>PROJECT</h4>
                         <ul>
                             <li>메인페이지 개편</li>
                             <li>시계·핸드백 DIY</li>
                         </ul>
-                    </p>
+                    </div>
                 </div>
                 <div class="content-wrap">
-                    <img src="@/assets/images/img-work-jestina.png" alt="Stove Mockup">
+                    <img
+                        src="@/assets/images/img-work-jestina.png"
+                        alt="Stove Mockup"
+                    />
                 </div>
             </section>
             <section class="section end-section">
@@ -173,9 +222,7 @@ export default {
             options: {
                 licenseKey: 'YOUR_KEY_HERE',
                 scrollBar: false,
-                menu: [
-                    '.work',
-                ],
+                menu: ['.work'],
                 navigation: true,
                 anchors: [
                     'main',
@@ -187,8 +234,8 @@ export default {
                     'end',
                 ],
             },
-        }
-    }
+        };
+    },
 };
 </script>
 
@@ -213,7 +260,7 @@ export default {
                 @include tablet {
                     width: 100%;
                 }
-            
+
                 @include mobile {
                     width: 100%;
                 }
@@ -339,26 +386,26 @@ export default {
                         .img-do-ones-own {
                             @include fadeInUp(0.8s);
                         }
-                
+
                         hr {
                             @include fadeInUp(0.8s);
                         }
-                
+
                         h2 {
                             @include fadeInUp(1.2s);
                         }
-                
+
                         p {
                             @include fadeInUp(1.2s);
                         }
-                        
+
                         &:nth-child(2) {
                             .profile-item {
                                 @include fadeInUp(1.6s);
                             }
                         }
                     }
-                
+
                     .img-char-me {
                         @include fadeInRight(2s);
                     }
@@ -376,29 +423,29 @@ export default {
                         text-align: center;
                         border-radius: 0.2rem;
                         color: white;
-                        transition: all .3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
                         &:hover {
                             background-color: transparent;
                             transform: scale(1.07);
-                            transition: all .3s ease-in-out;
+                            transition: all 0.3s ease-in-out;
                             z-index: 10;
                             &.smilegate {
                                 a {
-                                    transition: all .3s ease-in-out;
+                                    transition: all 0.3s ease-in-out;
                                     background-color: var(--smilegate-bg-color);
                                 }
                             }
-                        
+
                             &.dominos {
                                 a {
-                                    transition: all .3s ease-in-out;
+                                    transition: all 0.3s ease-in-out;
                                     background-color: var(--dominos-bg-color);
                                 }
                             }
-                        
+
                             &.jestina {
                                 a {
-                                    transition: all .3s ease-in-out;
+                                    transition: all 0.3s ease-in-out;
                                     background-color: var(--jestina-bg-color);
                                 }
                             }
@@ -421,17 +468,20 @@ export default {
                             }
                         }
                         &.smilegate {
-                            background: url(@/assets/images/bg-lostark.jpg) no-repeat;
+                            background: url(@/assets/images/bg-lostark.jpg)
+                                no-repeat;
                             background-position: 48% 68%;
                         }
-        
+
                         &.dominos {
-                            background: url(@/assets/images/bg-dominos.jpg) no-repeat;
+                            background: url(@/assets/images/bg-dominos.jpg)
+                                no-repeat;
                             background-position: 0% 84%;
                         }
-        
+
                         &.jestina {
-                            background: url(@/assets/images/bg-jestina.jpg) no-repeat;
+                            background: url(@/assets/images/bg-jestina.jpg)
+                                no-repeat;
                             background-position: 30% 46%;
                         }
                     }
@@ -442,11 +492,11 @@ export default {
                             &.smilegate {
                                 @include fadeInUp(0.4s);
                             }
-                
+
                             &.dominos {
                                 @include fadeInUp(0.8s);
                             }
-                
+
                             &.jestina {
                                 @include fadeInUp(1.2s);
                             }
@@ -497,6 +547,11 @@ export default {
                         @include font-subtitle();
                         margin-bottom: 0.8rem;
                     }
+                    ul {
+                        li {
+                            @include font-content();
+                        }
+                    }
                 }
                 &.smilegate {
                     background: var(--smilegate-bg-color);
@@ -504,7 +559,8 @@ export default {
                     background-position: 46% 66%;
                     background-repeat: no-repeat;
                     .content-wrap {
-                        h3, h4 {
+                        h3,
+                        h4 {
                             color: var(--smilegate-color);
                         }
                     }
@@ -538,7 +594,7 @@ export default {
                         h3 {
                             @include fadeInUp(0.8s);
                         }
-                        p {
+                        div {
                             @include fadeInUp(1.2s);
                         }
                         &:last-child {

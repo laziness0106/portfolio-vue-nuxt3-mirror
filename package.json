@@ -8,13 +8,13 @@
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare",
         "deploy": "push-dir --dir=.output --branch=gh-pages --cleanup",
-        "lint": "eslint .",
-        "format": "prettier .  --write"
+        "lint": "eslint . --fix",
+        "format": "prettier . --write"
     },
     "lint-staged": {
-        "*.js": [
-            "eslint --fix",
-            "git add"
+        "*.{css,scss,sass,vue,js,ts,tsx}": [
+            "prettier . --write",
+            "eslint . --fix"
         ]
     },
     "husky": {

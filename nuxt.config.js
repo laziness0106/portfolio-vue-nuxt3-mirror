@@ -55,9 +55,7 @@ export default defineNuxtConfig({
         },
         pageTransition: { name: 'page', mode: 'out-in' },
     },
-    modules: [
-        '@fullpage/nuxt-fullpage'
-    ],
+    modules: ['@fullpage/nuxt-fullpage'],
     buildModules: ['nuxt-vite', '@nuxtjs/style-resources'],
     vite: {
         css: {

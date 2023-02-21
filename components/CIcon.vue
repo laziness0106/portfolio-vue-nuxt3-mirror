@@ -128,7 +128,7 @@ i {
             border-radius: 2.3rem;
             opacity: 0.75;
             z-index: 1;
-    
+
             span {
                 position: absolute;
                 display: block;
@@ -142,7 +142,7 @@ i {
                 animation: ani-mouse 1.8s linear infinite;
             }
         }
-    
+
         .ic-arrow-down {
             text-align: center;
             span {
